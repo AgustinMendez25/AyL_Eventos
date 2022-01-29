@@ -1,0 +1,388 @@
+/*------------------------GENERAL-------------------------*/
+
+.titulo {
+    color: rgb(255,255,255);
+    padding: 12px;
+    border-radius: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-family: 'Source Serif Pro', serif;
+    text-shadow: 2px 3px 3px rgb(0,0,0);
+    background: rgb(142,9,9);
+    box-shadow: 1px 2px 5px 0px rgb(0,0,0);
+    font-style: normal;
+}
+
+.tarjeta-info-row{
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.tarjeta-info-col{
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #c6c6c6;
+    box-shadow: 1px 2px 3px;
+    border-top: 4px solid rgb(28,28,28);
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.bloque-info{
+    margin: 2%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 15px;
+    background: #aba7a7;
+    border-radius: 13px;
+    box-shadow: 1px 3px 5px;
+}
+
+/*------------------------MENSAJES-------------------------*/
+
+.caja-mensaje {
+    text-align:center;
+    margin-top: 60px;
+    padding: 30px;
+    background-color: rgb(117, 15, 15);
+    display:inline-block;
+    box-shadow: 1px 1px 3px;
+    border-radius: 15px;
+}
+
+.caja-mensaje a{
+    font-size: 24px;
+}
+
+/*------------------------IMAGENES-------------------------*/
+
+.columnas4 {
+    column-count: 4;
+}
+
+.columnas3 {
+    column-count: 3;
+}
+
+#galeria {
+    width:100%;
+    padding:30px;
+    box-sizing: border-box;
+    
+
+    /* Espacio entre columnas */
+    -moz-column-gap: 28px;
+    -webkit-column-gap: 28px;
+    column-gap: 28px;
+}
+
+article {
+    margin:0 0 28px 0;
+    text-align: center;
+    max-width: 100%;
+    border-radius: 6px;
+
+    /*Evitamos que se corte al cambiar de columna*/
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+article img {
+    width:100%;
+    border-radius:6px;
+}
+
+article:hover {
+    transition: .5s ease;
+    border: rgb(181, 171, 171) 3px solid;
+}
+
+@media (max-width: 980px) { 
+    #galeria {
+        columns:3;
+    }
+
+}
+
+@media (max-width: 767px) { 
+    #galeria {
+        columns:2;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #galeria {
+        columns: 1;
+    }
+}
+
+/*------------------------INDEX.PHP-------------------------*/
+
+.info-central h4{
+    color: rgb(37,36,36);
+    border-radius: 25px;
+    font-family: 'Source Serif Pro', serif;
+    text-shadow: 1px 1px 2px rgb(255,255,255);
+    font-style: normal;
+    font-size: 28px;
+    padding-top: 12px;
+}
+
+.info-central ul{
+    padding-left: 12px;
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    text-align: left;
+}
+
+.info-central li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.noticias-slider{
+    filter: blur(0px) brightness(100%) contrast(92%) saturate(100%);
+    margin-bottom: -80px;
+}
+
+.noticias-slider img {
+    border-radius: 35px;
+}
+
+.noticias-slider p { 
+    position:relative;
+    top:-65px;
+    font-size:15px;
+    font-family: 'Libre Baskerville', serif;
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.145);
+    padding: 4px;
+}
+
+.carousel-indicators{
+    position: relative;
+}
+
+.agregarComentario {
+    color: rgb(255,255,255);
+    padding: 6px;
+    border-radius: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Source Serif Pro', serif;
+    text-shadow: 2px 3px 3px rgb(0,0,0);
+    background: rgb(142,9,9);
+    box-shadow: 1px 2px 5px 0px rgb(0,0,0);
+    font-size:20px;
+    margin-bottom: 30px;
+}
+
+.agregarComentario:hover {
+    color: rgb(255,255,255);
+    text-decoration: underline;
+}
+
+/*------------------------COMBOS.PHP-------------------------*/
+
+.combo{
+    background: #b3adad;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    padding-top: 0;
+    box-shadow: 2px 3px 6px;
+    font-family: Roboto, sans-serif;
+}
+
+.combo h4{
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-left: 32px;
+    font-size: 25px;
+    margin-top: 15px;
+    text-shadow: 1px 1px 2px rgb(255,255,255);
+    margin-right: 32px;
+    border-radius: 15px;
+    color: rgb(0,0,0);
+}
+
+.combo ul{
+    padding-left: 0px;
+    font-size: 18px;
+    text-shadow: 0px 0px 0px rgb(0,0,0);
+}
+
+.combo li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.combo h5{
+    color: rgb(255,255,255);
+    text-shadow: 1px 1px 2px rgb(0,0,0);
+    border-radius: 9px;
+    background: rgb(142,9,9);
+    padding: 6px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.cartel-combos{
+    background: #b3adad;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    padding-top: 0;
+    box-shadow: 2px 3px 6px;
+    font-family: Roboto, sans-serif;
+    width: 700px;
+}
+
+.cartel-combos p{
+    margin-bottom: 0;
+    font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+    padding: 26px;
+    text-shadow: 1px 1px 1px rgb(206, 206, 206);
+}
+
+.cartel-combos h5{
+    color: rgb(225,225,225);
+    background: #b30e0e;
+    border-radius: 9px;
+    box-shadow: 1px 1px 1px rgb(0,0,0);
+    text-shadow: 1px 1px 3px rgb(0,0,0);
+    padding-top: 12px;
+    padding-bottom: 11px;
+}
+
+
+.tarjetas-combos h4{
+    color: rgb(255,255,255);
+    padding: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 25px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    font-family: 'Source Serif Pro', serif;
+    text-shadow: 2px 3px 3px rgb(0,0,0);
+    background: rgb(142,9,9);
+    box-shadow: 1px 2px 5px 0px rgb(0,0,0);
+    font-style: normal;
+    font-size: 32px;
+}
+
+.tarjetas-combos h5{
+    font-size: 20px;
+    padding: 8px;
+    color: rgb(29,29,30);
+    font-family: 'Source Serif Pro', serif;
+}
+
+.tarjetas-combos .variedades-extra{
+    font-size: 30px;
+    text-shadow: 1px 1px 3px rgb(255,255,255);
+    padding:0;
+}
+
+.tarjetas-combos ul{
+    padding-left: 0px;
+    font-size: 23px;
+    text-shadow: 1px 1px 3px rgb(255,255,255);
+    font-family: 'Libre Baskerville', serif;
+}
+
+.tarjetas-combos li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.tarjetas-combos .item{
+    padding:4px;
+}
+
+/*------------------------CONTACTO.PHP-------------------------*/
+
+.datos-contacto h5{
+    text-align: center;
+    font-size: 32px;
+    padding: 6px;
+    font-family: 'Source Serif Pro', serif;
+    text-shadow: 1px 1px 2px rgb(255,255,255);
+    color: rgb(24,24,24);
+}
+
+.datos-contacto p{
+    font-size: 24px;
+    padding-left: 5%;
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(11,11,11);
+}
+
+
+.formulario-contacto h5{
+    font-size: 30px;
+    margin: 14px;
+    font-family: 'Source Serif Pro', serif;
+    text-shadow: 1px 1px 2px rgb(255,255,255);
+    color: rgb(31,32,33);
+}
+
+.formulario-contacto label{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
+}
+
+.formulario-contacto button{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
+    background: rgb(142,9,9);
+}
+
+/*------------------------ADMIN.PHP-------------------------*/
+
+.caja-inicio-sesion {
+    padding: 30px;
+    background: #aba7a7;
+    border-radius: 13px;
+    margin-top: 50px;
+    box-shadow: 1px 3px 5px;
+}
+
+.caja-inicio-sesion h2 {
+    font-size: 36px;
+    font-family: 'Source Serif Pro', serif;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.733);
+    padding: 15px;
+}
+
+.caja-inicio-sesion label {
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(0,0,0);
+    margin-bottom: 15px;
+}
+
+.caja-inicio-sesion button {
+    background: rgb(177,10,10);
+    padding: 10px 20%;
+    color: rgb(255, 255, 255);
+}
+
+.caja-inicio-sesion button:hover{
+    background-color: rgba(200,10,10)!important;
+    color: rgb(255, 255, 255);
+}

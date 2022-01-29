@@ -1,0 +1,81 @@
+  .logo {
+    width: 115px;
+    height: 115px;
+    margin: 4px;
+    margin-left: 28px;
+  }
+  
+  .navigation-clean {
+    background: #fff;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    color: #333;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 0;
+  }
+  
+  @media (min-width:768px) {
+    .navigation-clean {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  
+  .navigation-clean .navbar-toggler {
+    border-color: #ddd;
+    background: #dddbdb;
+    box-shadow: 1px 2px 3px rgb(0,0,0);
+    margin-right: 12px;
+  }
+  
+  .navigation-clean .navbar-toggler:hover, .navigation-clean .navbar-toggler:focus {
+    background: none;
+    background: #dddbdb;
+    box-shadow: 1px 2px 3px rgb(0,0,0);
+    margin-right: 12px;
+  }
+  
+  .navigation-clean .navbar-toggler {
+    color: #888;
+    background: #dddbdb;
+    box-shadow: 1px 2px 3px rgb(0,0,0);
+    margin-right: 12px;
+  }
+  
+  .navigation-clean .navbar-collapse, .navigation-clean .form-inline {
+    border-top-color: #ddd;
+  }
+  
+  .navigation-clean .navbar-nav > .active > a, .navigation-clean .navbar-nav > .show > a {
+    background: none;
+    box-shadow: none;
+  }
+  
+  .navigation-clean.navbar-light .navbar-nav .nav-link.active, .navigation-clean.navbar-light .navbar-nav .nav-link.active:focus, .navigation-clean.navbar-light .navbar-nav .nav-link.active:hover {
+    color: #8f8f8f;
+    box-shadow: none;
+    background: none;
+    pointer-events: none;
+  }
+  
+  .navigation-clean.navbar .navbar-nav .nav-link {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  
+  .navigation-clean.navbar-light .navbar-nav .nav-link {
+    font-size: 34px;
+    color: rgb(255,255,255);
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: Playball, cursive;
+  }
+  
+  .navigation-clean.navbar-light .navbar-nav .nav-link:focus, .navigation-clean.navbar-light .navbar-nav .nav-link:hover {
+    background-color: rgb(142,9,9);
+    border-radius: 15px;
+  }

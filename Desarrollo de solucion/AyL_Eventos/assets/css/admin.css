@@ -1,0 +1,54 @@
+/*--------------------SECCION DE ADMINISTRACION-----------------------*/
+
+.header-admin {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding:15px;
+    background: rgba(0,0,0,0.66)
+}
+
+.titulo-admin {
+    color: rgb(255,255,255);
+    font-family: 'Source Serif Pro', serif;
+    text-shadow: 2px 3px 3px rgb(0,0,0);
+    margin-left: 20px;
+}
+
+.header-admin a{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Source Serif Pro', serif;
+    margin-right: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(196, 30, 30)
+}
+
+.modificador-admin {
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    margin-top: 10px;
+    background-color: rgb(177, 11, 11);
+    border-radius: 20px;
+    padding:25px;
+}
+
+.espacio-admin {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.mod-admin .form-group {
+    text-align: start;
+}
+
+.mod-admin .boton-admin{
+    text-align: center;
+}
+
+.mod-admin label{
+    font-size: 16px;
+    color:beige;
+}

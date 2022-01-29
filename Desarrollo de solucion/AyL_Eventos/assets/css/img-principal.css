@@ -1,0 +1,17 @@
+.imagen {
+    background: url(../img/GENERAL/FondoPrincipal1.jpg) top / cover no-repeat;
+    height: 600px;
+}
+
+.texto-principal {
+    padding: 13px;
+    border-radius: 20px;
+    background: rgba(23,22,22,0.31);
+    color: rgb(255,255,255);
+    padding-right: 30px;
+    padding-left: 30px;
+    filter: blur(0px) brightness(100%);
+    font-family: 'Kaushan Script', cursive;
+    font-size: 48px;
+    text-shadow: 5px 5px 5px rgb(0,0,0);
+}
