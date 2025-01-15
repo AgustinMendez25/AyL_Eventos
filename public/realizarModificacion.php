@@ -63,12 +63,12 @@
                 $id_nuevo++;
 
                 //Actualiza el registro y coloca la sección de imagen, el id y la url
-                $url = "assets/img/".$_POST['seccion_imagen']."/".$_POST['nombre_archivo'];
+                $url = "/img/".$_POST['seccion_imagen']."/".$_POST['nombre_archivo'];
                 $query2 = "UPDATE imagenes SET seccion_imagen='".$_POST['seccion_imagen']."',URL_imagen='".$url."', id=".$id_nuevo." WHERE id=".$id;
                 $envio2 = $conexion->query($query2);
 
                 //Almacena la dirección actual y la nueva
-                $dir_actual = $_SERVER['DOCUMENT_ROOT'].'/ayl_eventos/assets/img/'.$_POST['nombre_archivo'];
+                $dir_actual = $_SERVER['DOCUMENT_ROOT'].'/ayl_eventos//img/'.$_POST['nombre_archivo'];
                 $dir_nueva = $_SERVER['DOCUMENT_ROOT'].'/ayl_eventos/'.$url;
 
                 //Mueve el archivo de la direccion actual a la direccion nueva
@@ -86,12 +86,12 @@
                 $id_nuevo++;
 
                 //Actualiza el registro y coloca la sección de imagen, el id y la url
-                $url = "assets/img/Galeria/".$_POST['nombre_archivo'];
+                $url = "/img/Galeria/".$_POST['nombre_archivo'];
                 $query2 = "UPDATE imagenes SET seccion_imagen='".$_POST['seccion_imagen']."',URL_imagen='".$url."', id=".$id_nuevo." WHERE id=".$id;
                 $envio2 = $conexion->query($query2);
 
                 //Almacena la dirección actual y la nueva
-                $dir_actual = $_SERVER['DOCUMENT_ROOT'].'/ayl_eventos/assets/img/'.$_POST['nombre_archivo'];
+                $dir_actual = $_SERVER['DOCUMENT_ROOT'].'/ayl_eventos//img/'.$_POST['nombre_archivo'];
                 $dir_nueva = $_SERVER['DOCUMENT_ROOT'].'/ayl_eventos/'.$url;
 
                 //Mueve el archivo de la direccion actual a la direccion nueva
@@ -108,18 +108,18 @@
 
     <!--------------------------VINCULACION CSS-------------------------->
     
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/img-principal.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/img-principal.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/admin.css">
     
     <!--------------------------FUENTES DE TEXTO-------------------------->
 
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playball">
@@ -128,7 +128,7 @@
 
 </head>
 
-<body style="background: url(&quot;assets/img/GENERAL/backgroundbody.jpg&quot;);background-size: auto;">
+<body style="background: url(&quot;/img/GENERAL/backgroundbody.jpg&quot;);background-size: auto;">
 
     <div style="display:flex;justify-content:center;">
         <div class="caja-mensaje">

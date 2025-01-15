@@ -16,18 +16,18 @@
 
     <!--------------------------VINCULACION CSS-------------------------->
     
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/img-principal.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/img-principal.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/admin.css">
     
     <!--------------------------FUENTES DE TEXTO-------------------------->
 
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playball">
@@ -36,7 +36,7 @@
 
 </head>
 
-<body style="background: url(&quot;assets/img/GENERAL/backgroundbody.jpg&quot;);background-size: auto;">
+<body style="background: url(&quot;/img/GENERAL/backgroundbody.jpg&quot;);background-size: auto;">
 
     <!--------------------------VERIFICACION ADMIN-------------------------->
 
@@ -52,10 +52,9 @@
     ?>
 
     <!--------------------------NAVBAR-------------------------->
-
     <nav class="navbar navbar-light navbar-expand-md float-none navigation-clean" style="background: rgba(0,0,0,0.66);padding: 0;">
         <div class="container-fluid">
-            <a href="index.php"><img src="assets/img/GENERAL/Logo.png" class = "logo"></a>
+            <a href="index.php"><img src="/img/GENERAL/Logo.png" class = "logo"></a>
             <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
                 <i class="icon ion-android-menu" style="color: rgb(55,54,54);font-size: 35px;"></i>
                 <span class="sr-only" style="opacity: 1;">Toggle navigation</span>
@@ -105,7 +104,7 @@
                         while($row=$envio->fetch_assoc()){
                     ?>
                     <div class="carousel-item active">
-                        <img class="w-100 d-block" src="<?php echo $row['URL_imagen'];?>" alt="Slide Image" style="min-height: 200px;">
+                        <img class="w-100 d-block" src="<?php echo substr($row['URL_imagen'],6);?>" alt="Slide Image" style="min-height: 200px;">
                         <p><?php echo $row['descripcion'];?></p>
                     </div>
                     <?php } ?>
@@ -115,7 +114,7 @@
                         while($row=$envio->fetch_assoc()){
                     ?>
                     <div class="carousel-item">
-                        <img class="w-100 d-block" src="<?php echo $row['URL_imagen'];?>" alt="Slide Image" style="min-height: 200px;">
+                        <img class="w-100 d-block" src="<?php echo substr($row['URL_imagen'],6);?>" alt="Slide Image" style="min-height: 200px;">
                         <p><?php echo $row['descripcion'];?></p>
                     </div>
                     <?php } ?>
@@ -131,7 +130,7 @@
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
                     <?php //PHP IMAGENES NOTICIAS ID
-                        $query = "SELECT URL_imagen FROM imagenes where seccion_imagen = 'Noticias' and id != 1";
+                        $query = "SELECT id, URL_imagen FROM imagenes where seccion_imagen = 'Noticias' and id != 1";
                         $envio = $conexion->query($query);
                         while($row=$envio->fetch_assoc()){
                     ?>
@@ -176,70 +175,10 @@
                     </ul>
                 </div>
                 <div class="col d-flex flex-column justify-content-center" style="padding: 20px;">
-                    <img src="assets/img/GENERAL/Produccion16.jpg" style="width: 100%;">
+                    <img src="/img/GENERAL/Produccion16.jpg" style="width: 100%;">
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row d-flex justify-content-center" style="margin-right: 0px;margin-left: 0px;">
-        <div class="col-12 text-center" style="padding:0px">
-            <h1 class="d-inline-block titulo">Comentarios<br></h1>
-        </div>
-        <div class="col-12 col-sm-12 col-md-11 col-lg-10 col-xl-10 bloque-info" style="border-radius:20px">
-            <div class="carousel slide" data-ride="carousel" id="carousel-3" style="box-shadow: 0px 0px;padding: 10px;">
-                <div class="carousel-inner" style="filter: blur(0px) brightness(100%) contrast(92%) saturate(100%);border-radius: 35px;padding-bottom: 30px;">
-                    <?php
-                        $query = "SELECT * FROM comentarios LIMIT 15";
-                        $envio = $conexion->query($query);
-                        $total = $envio->num_rows;
-                        $active = true;
-                        $item = $envio->fetch_assoc()['id'] ;
-                        $cont = 0;
-
-                        while($row=$envio->fetch_assoc()){    
-                    ?>
-                    <div class="carousel-item <?php if($active){ echo " active"; $active=false;} ?> " >
-                        <div class="row d-flex justify-content-center" style="margin-left: 0;margin-right: 0;">
-                            <?php 
-                                $query2 = "SELECT * FROM comentarios where id >= " . $item . " AND id < " . ($item+3);
-                                $envio2 = $conexion->query($query2);
-                                while($row2=$envio2->fetch_assoc()){ 
-                            ?>
-                            <div class="col-9 col-sm-9 col-md-9 col-lg-3 col-xl-3" style="padding: 0;margin: 10px;">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title"><?php echo $row2['titulo']?></h4>
-                                        <p class="card-text">
-                                            <?php echo $row2['comentario']?>
-                                            <br>
-                                            <small class="form-text text-muted"><?php echo $row2['nombre']?>, <?php echo $row2['fecha']?></small>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php 
-                                    $cont++;
-                                }
-
-                                $item = $item+3; 
-                            ?>
-                        </div>
-                    </div>  
-                    <?php 
-                        if( $total == $cont )
-                            break;
-                        }
-                    ?>
-                </div>
-                <div>
-                    <a class="carousel-control-prev" href="#carousel-3" role="button" data-slide="prev" style="max-width: 100px;">
-                    <span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a>
-                    <a class="carousel-control-next" href="#carousel-3" role="button" data-slide="next" style="max-width: 100px;">
-                    <span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a>
-                </div>
-            </div>
-        </div>
-        <a class="agregarComentario" href="agregarComentario.php">Dejá tu comentario aca!</a>
     </div>
 
     <!--------------------------FOOTER-------------------------->
@@ -247,14 +186,14 @@
     <footer class="row" style="margin-right: 0px;margin-left: 0px;">
         <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 d-flex justify-content-center align-items-center flex-column">
             <div class="d-flex justify-content-center align-items-center flex-wrap titulo-footer">
-                <img src="assets/img/GENERAL/Logo.png" class="logo">
+                <img src="/img/GENERAL/Logo.png" class="logo">
                 <h3>A&L Eventos</h3>
             </div>    
             <div class="redes">
                 <a href="https://www.instagram.com/ayl_eventospizzaparty/?hl=es" target="_blank"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.facebook.com/tortasmesadulce.dulcestilo" target="_blank"><i class="fa fa-facebook-square"></i></a>
-                <a href="https://fiesta.mercadolibre.com.ar/MLA-866455332-pizza-party-prepizzas-servicio-de-lunch-_JM" target="_blank">
-                    <img src="assets/img/GENERAL/logomercadolibre.png">
+                <a href="https://fiesta.mercadolibre.com.ar/MLA-1449014749-pizza-party-catering-lunch-ayl-eventos-_JM" target="_blank">
+                    <img src="/img/GENERAL/logomercadolibre.png">
                 </a>
             </div>
         </div>
@@ -280,8 +219,8 @@
     
     <!--------------------------Scripts JS-------------------------->
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     
 </body>

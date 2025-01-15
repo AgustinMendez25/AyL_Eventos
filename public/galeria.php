@@ -16,18 +16,18 @@
 
     <!--------------------------VINCULACION CSS-------------------------->
 
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/img-principal.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/img-principal.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/admin.css">
 
     <!--------------------------FUENTES DE TEXTO-------------------------->
 
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playball">
@@ -36,7 +36,7 @@
 
 </head>
 
-<body style="background: url(&quot;assets/img/GENERAL/backgroundbody.jpg&quot;);background-size: auto;">
+<body style="background: url(&quot;/img/GENERAL/backgroundbody.jpg&quot;);background-size: auto;">
     
     <!--------------------------VERIFICACION ADMIN-------------------------->
 
@@ -56,7 +56,7 @@
 
     <nav class="navbar navbar-light navbar-expand-md float-none navigation-clean" style="background: rgba(0,0,0,0.66);padding: 0;">
         <div class="container-fluid">
-            <a href="index.php"><img src="assets/img/GENERAL/Logo.png" class = "logo"></a>
+            <a href="index.php"><img src="/img/GENERAL/Logo.png" class = "logo"></a>
             <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
                 <i class="icon ion-android-menu" style="color: rgb(55,54,54);font-size: 35px;"></i>
                 <span class="sr-only" style="opacity: 1;">Toggle navigation</span>
@@ -98,66 +98,26 @@
         if (!empty($_SESSION['contraseña_admin'])){
     ?>
         <div class="espacio-admin" style="margin-top:80px;margin-bottom:20px;">
-            <a href="administracion.php#imagen_nuestrasdelicias" class="modificador-admin">Modificar Imagenes</a>
+            <a href="administracion.php#imagenes" class="modificador-admin">Modificar Imagenes</a>
         </div>
     <?php
         }
     ?>
 
     <!--------------------------CONTENIDO DE LA SECCION-------------------------->
-
-    <div class="text-center" style="padding: 10px;">
-        <div class="row" style="margin-right: 0px;margin-left: 0px;">         
-            <div class="col-12 text-center" style="padding-right: 0;padding-left: 0;">
-                <h1 class="d-inline-block titulo">Variedades</h1>
-            </div>
+    
+    <div class="row" style="margin-left: 0px;margin-right: 0px;">
+        <div class="col text-center" style="padding-right: 0;padding-left: 0;">
+            <h1 class="text-center d-inline-block titulo">Galería</h1>
             <section id="galeria" class="columnas4">
-                <?php //PHP IMAGENES VARIEDADES
-                    $query = "SELECT * FROM imagenes where seccion_imagen = 'Variedades'";
+                <?php //PHP IMAGENES
+                    $query = "SELECT * FROM imagenes where seccion_imagen = 'Famosos' or seccion_imagen = 'Produccion' or seccion_imagen = 'Eventos' order by seccion_imagen";
                     $envio = $conexion->query($query);
                     while($row=$envio->fetch_assoc()){
                 ?>
                 <article>
-                    <a target="_blank" data-lightbox="photos" href="<?php echo $row['URL_imagen'];?>">
-                        <img src="<?php echo $row['URL_imagen'];?>" />
-                    </a>
-                </article>
-                <?php } ?>
-            </section>
-        </div>
-
-        <div class="row" style="margin-right: 0px;margin-left: 0px;">
-            <div class="col-12 text-center" style="padding-right: 0;padding-left: 0;">
-                <h1 class="d-inline-block titulo">Entradas</h1>
-            </div>
-            <section id="galeria" class="columnas4">
-                <?php //PHP IMAGENES ENTRADAS
-                    $query = "SELECT * FROM imagenes where seccion_imagen = 'Entradas'";
-                    $envio = $conexion->query($query);
-                    while($row=$envio->fetch_assoc()){
-                ?>
-                <article>
-                    <a target="_blank" data-lightbox="photos" href="<?php echo $row['URL_imagen'];?>">
-                        <img src="<?php echo $row['URL_imagen'];?>" />
-                    </a>
-                </article>
-                <?php } ?>
-            </section>
-        </div>
-
-        <div class="row" style="margin-right: 0px;margin-left: 0px;">
-            <div class="col-12 text-center" style="padding-right: 0;padding-left: 0;">
-                <h1 class="d-inline-block titulo">Entradas Especiales</h1>
-            </div>
-            <section id="galeria" class="columnas3">
-                <?php //PHP IMAGENES ENTRADAS ESPECIALES
-                    $query = "SELECT * FROM imagenes where seccion_imagen = 'EntradasEspeciales'";
-                    $envio = $conexion->query($query);
-                    while($row=$envio->fetch_assoc()){
-                ?>
-                <article>
-                    <a target="_blank" data-lightbox="photos" href="<?php echo $row['URL_imagen'];?>">
-                        <img src="<?php echo $row['URL_imagen'];?>" />
+                    <a target="_blank" data-lightbox="photos" href="<?php echo substr($row['URL_imagen'],6);?>">
+                        <img src="<?php echo substr($row['URL_imagen'],6);?>" />
                     </a>
                 </article>
                 <?php } ?>
@@ -166,18 +126,18 @@
     </div>
     
     <!--------------------------FOOTER-------------------------->
-    
+
     <footer class="row" style="margin-right: 0px;margin-left: 0px;">
         <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 d-flex justify-content-center align-items-center flex-column">
             <div class="d-flex justify-content-center align-items-center flex-wrap titulo-footer">
-                <img src="assets/img/GENERAL/Logo.png" class="logo">
+                <img src="/img/GENERAL/Logo.png" class="logo">
                 <h3>A&L Eventos</h3>
             </div>    
             <div class="redes">
                 <a href="https://www.instagram.com/ayl_eventospizzaparty/?hl=es" target="_blank"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.facebook.com/tortasmesadulce.dulcestilo" target="_blank"><i class="fa fa-facebook-square"></i></a>
                 <a href="https://fiesta.mercadolibre.com.ar/MLA-866455332-pizza-party-prepizzas-servicio-de-lunch-_JM" target="_blank">
-                    <img src="assets/img/GENERAL/logomercadolibre.png">
+                    <img src="/img/GENERAL/logomercadolibre.png">
                 </a>
             </div>
         </div>
@@ -200,12 +160,14 @@
             </ul>
         </div>
     </footer>
-
+    
     <!--------------------------Scripts JS-------------------------->
     
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
 </body>
 
 </html>
+

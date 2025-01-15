@@ -3,6 +3,7 @@ footer{
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     color: rgb(228, 228, 228);
+    margin-bottom: -24px;
 }
 
 .titulo-footer {

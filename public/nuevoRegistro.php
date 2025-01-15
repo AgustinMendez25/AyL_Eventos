@@ -11,13 +11,13 @@
                 if ($nombre_img == !NULL){
 
                     //Obtiene el directorio para cargar la imagen
-                    $directorio = $_SERVER['DOCUMENT_ROOT'].'/ayl_eventos/assets/img/Noticias/';
+                    $directorio = $_SERVER['DOCUMENT_ROOT'].'/ayl_eventos//img/Noticias/';
                     
                     //Carga la imagen en el servidor
                     move_uploaded_file($_FILES['imagen']['tmp_name'],$directorio.$nombre_img);
                     
                     //Carga la URL en la base de datos
-                    $url_imagen = 'assets/img/Noticias/'.$nombre_img;
+                    $url_imagen = '/img/Noticias/'.$nombre_img;
                     $query = "INSERT INTO imagenes(seccion_imagen, URL_imagen) values('Noticias','".$url_imagen."')";
                     $envio = $conexion->query($query);
                 }
@@ -71,13 +71,13 @@
                 if ($nombre_img == !NULL){
 
                     //Obtiene el directorio para cargar la imagen
-                    $directorio = $_SERVER['DOCUMENT_ROOT'].'/ayl_eventos/assets/img/';
+                    $directorio = $_SERVER['DOCUMENT_ROOT'].'/ayl_eventos//img/';
                     
                     //Carga la imagen en el servidor
                     move_uploaded_file($_FILES['imagen']['tmp_name'],$directorio.$nombre_img);
                     
                     //Carga la URL en la base de datos
-                    $url_imagen = 'assets/img/'.$nombre_img;
+                    $url_imagen = '/img/'.$nombre_img;
                     $query = "INSERT INTO imagenes(id,URL_imagen) values(-1, '".$url_imagen."')";
                     $envio = $conexion->query($query);
                 }
@@ -93,13 +93,13 @@
                 if ($nombre_img == !NULL){
 
                     //Obtiene el directorio para cargar la imagen
-                    $directorio = $_SERVER['DOCUMENT_ROOT'].'/ayl_eventos/assets/img/';
+                    $directorio = $_SERVER['DOCUMENT_ROOT'].'/ayl_eventos//img/';
                     
                     //Carga la imagen en el servidor
                     move_uploaded_file($_FILES['imagen']['tmp_name'],$directorio.$nombre_img);
                     
                     //Carga la URL en la base de datos
-                    $url_imagen = 'assets/img/'.$nombre_img;
+                    $url_imagen = '/img/'.$nombre_img;
                     $query = "INSERT INTO imagenes(id,URL_imagen) values(-1, '".$url_imagen."')";
                     $envio = $conexion->query($query);
                 }
@@ -119,18 +119,18 @@
 
     <!--------------------------VINCULACION CSS-------------------------->
     
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/img-principal.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/img-principal.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/admin.css">
     
     <!--------------------------FUENTES DE TEXTO-------------------------->
 
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playball">
@@ -139,7 +139,7 @@
 
 </head>
 
-<body style="background: url(&quot;assets/img/GENERAL/backgroundbody.jpg&quot;);background-size: auto;">
+<body style="background: url(&quot;/img/GENERAL/backgroundbody.jpg&quot;);background-size: auto;">
 
     <div style="display:flex;justify-content:center;">
         <div class="caja-mensaje">

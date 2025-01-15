@@ -16,18 +16,18 @@
 
     <!--------------------------VINCULACION CSS-------------------------->
 
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/img-principal.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/img-principal.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/admin.css">
 
     <!--------------------------FUENTES DE TEXTO-------------------------->
     
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playball">
@@ -36,7 +36,7 @@
 
 </head>
 
-<body style="background: url(&quot;assets/img/GENERAL/backgroundbody.jpg&quot;);background-size: auto;">
+<body style="background: url(&quot;/img/GENERAL/backgroundbody.jpg&quot;);background-size: auto;">
     
     <!--------------------------VERIFICACION ADMIN-------------------------->
 
@@ -56,7 +56,7 @@
 
     <nav class="navbar navbar-light navbar-expand-md float-none navigation-clean" style="background: rgba(0,0,0,0.66);padding: 0;">
         <div class="container-fluid">
-            <a href="index.php"><img src="assets/img/GENERAL/Logo.png" class = "logo"></a>
+            <a href="index.php"><img src="/img/GENERAL/Logo.png" class = "logo"></a>
             <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
                 <i class="icon ion-android-menu" style="color: rgb(55,54,54);font-size: 35px;"></i>
                 <span class="sr-only" style="opacity: 1;">Toggle navigation</span>
@@ -181,23 +181,23 @@
                     <div class="col" style="padding: 20px;">
                         <div class="row" style="margin: 0;">
                             <div class="col-6 item">
-                                <a data-lightbox="photos" href="assets/img/GENERAL/SeccionCombo/Variedad1.jpg">
-                                    <img class="img-fluid" src="assets/img/GENERAL/SeccionCombo/Variedad1.jpg">
+                                <a data-lightbox="photos" href="/img/GENERAL/SeccionCombo/Variedad1.jpg">
+                                    <img class="img-fluid" src="/img/GENERAL/SeccionCombo/Variedad1.jpg">
                                 </a>
                             </div>
                             <div class="col-6 item">
-                                <a data-lightbox="photos" href="assets/img/GENERAL/SeccionCombo/Variedad2.jpg">
-                                    <img class="img-fluid" src="assets/img/GENERAL/SeccionCombo/Variedad2.jpg">
+                                <a data-lightbox="photos" href="/img/GENERAL/SeccionCombo/Variedad2.jpg">
+                                    <img class="img-fluid" src="/img/GENERAL/SeccionCombo/Variedad2.jpg">
                                 </a>
                             </div>
                             <div class="col-6 item">
-                                <a data-lightbox="photos" href="assets/img/GENERAL/SeccionCombo/Variedad3.jpg">
-                                    <img class="img-fluid" src="assets/img/GENERAL/SeccionCombo/Variedad3.jpg">
+                                <a data-lightbox="photos" href="/img/GENERAL/SeccionCombo/Variedad3.jpg">
+                                    <img class="img-fluid" src="/img/GENERAL/SeccionCombo/Variedad3.jpg">
                                 </a>
                             </div>
                             <div class="col-6 item">
-                                <a data-lightbox="photos" href="assets/img/GENERAL/SeccionCombo/Variedad4.jpg">
-                                    <img class="img-fluid" src="assets/img/GENERAL/SeccionCombo/Variedad4.jpg">
+                                <a data-lightbox="photos" href="/img/GENERAL/SeccionCombo/Variedad4.jpg">
+                                    <img class="img-fluid" src="/img/GENERAL/SeccionCombo/Variedad4.jpg">
                                 </a>
                             </div>
                         </div>
@@ -223,23 +223,23 @@
                     <div class="col" style="padding: 20px;">
                         <div class="row" style="margin: 0;">
                             <div class="col-6 item">
-                                <a data-lightbox="photos" href="assets/img/GENERAL/SeccionCombo/Entrada1.jpg">
-                                    <img class="img-fluid" src="assets/img/GENERAL/SeccionCombo/Entrada1.jpg">
+                                <a data-lightbox="photos" href="/img/GENERAL/SeccionCombo/Entrada1.jpg">
+                                    <img class="img-fluid" src="/img/GENERAL/SeccionCombo/Entrada1.jpg">
                                 </a>
                             </div>
                             <div class="col-6 item">
-                                <a data-lightbox="photos" href="assets/img/GENERAL/SeccionCombo/Entrada2.jpg">
-                                    <img class="img-fluid" src="assets/img/GENERAL/SeccionCombo/Entrada2.jpg">
+                                <a data-lightbox="photos" href="/img/GENERAL/SeccionCombo/Entrada2.jpg">
+                                    <img class="img-fluid" src="/img/GENERAL/SeccionCombo/Entrada2.jpg">
                                 </a>
                             </div>
                             <div class="col-6 item">
-                                <a data-lightbox="photos" href="assets/img/GENERAL/SeccionCombo/Entrada3.jpg">
-                                    <img class="img-fluid" src="assets/img/GENERAL/SeccionCombo/Entrada3.jpg">
+                                <a data-lightbox="photos" href="/img/GENERAL/SeccionCombo/Entrada3.jpg">
+                                    <img class="img-fluid" src="/img/GENERAL/SeccionCombo/Entrada3.jpg">
                                 </a>
                             </div>
                             <div class="col-6 item">
-                                <a data-lightbox="photos" href="assets/img/GENERAL/SeccionCombo/Entrada4.jpg">
-                                    <img class="img-fluid" src="assets/img/GENERAL/SeccionCombo/Entrada4.jpg">
+                                <a data-lightbox="photos" href="/img/GENERAL/SeccionCombo/Entrada4.jpg">
+                                    <img class="img-fluid" src="/img/GENERAL/SeccionCombo/Entrada4.jpg">
                                 </a>
                             </div>
                         </div>
@@ -289,23 +289,23 @@
                     <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6" style="padding: 20px;">
                         <div class="row" style="margin: 0;">
                             <div class="col-6 item">
-                                <a data-lightbox="photos" href="assets/img/GENERAL/SeccionCombo/EntradaEspecial1.jpg">
-                                    <img class="img-fluid" src="assets/img/GENERAL/SeccionCombo/EntradaEspecial1.jpg">
+                                <a data-lightbox="photos" href="/img/GENERAL/SeccionCombo/EntradaEspecial1.jpg">
+                                    <img class="img-fluid" src="/img/GENERAL/SeccionCombo/EntradaEspecial1.jpg">
                                 </a>
                             </div>
                             <div class="col-6 item">
-                                <a data-lightbox="photos" href="assets/img/GENERAL/SeccionCombo/EntradaEspecial2.jpg">
-                                    <img class="img-fluid" src="assets/img/GENERAL/SeccionCombo/EntradaEspecial2.jpg">
+                                <a data-lightbox="photos" href="/img/GENERAL/SeccionCombo/EntradaEspecial2.jpg">
+                                    <img class="img-fluid" src="/img/GENERAL/SeccionCombo/EntradaEspecial2.jpg">
                                 </a>
                             </div>
                             <div class="col-6 item">
-                                <a data-lightbox="photos" href="assets/img/GENERAL/SeccionCombo/EntradaEspecial3.jpg">
-                                    <img class="img-fluid" src="assets/img/GENERAL/SeccionCombo/EntradaEspecial3.jpg">
+                                <a data-lightbox="photos" href="/img/GENERAL/SeccionCombo/EntradaEspecial3.jpg">
+                                    <img class="img-fluid" src="/img/GENERAL/SeccionCombo/EntradaEspecial3.jpg">
                                 </a>
                             </div>
                             <div class="col-6 item">
-                                <a data-lightbox="photos" href="assets/img/GENERAL/SeccionCombo/EntradaEspecial4.jpg">
-                                    <img class="img-fluid" src="assets/img/GENERAL/SeccionCombo/EntradaEspecial4.jpg">
+                                <a data-lightbox="photos" href="/img/GENERAL/SeccionCombo/EntradaEspecial4.jpg">
+                                    <img class="img-fluid" src="/img/GENERAL/SeccionCombo/EntradaEspecial4.jpg">
                                 </a>
                             </div>
                         </div>
@@ -331,14 +331,14 @@
     <footer class="row" style="margin-right: 0px;margin-left: 0px;">
         <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 d-flex justify-content-center align-items-center flex-column">
             <div class="d-flex justify-content-center align-items-center flex-wrap titulo-footer">
-                <img src="assets/img/GENERAL/Logo.png" class="logo">
+                <img src="/img/GENERAL/Logo.png" class="logo">
                 <h3>A&L Eventos</h3>
             </div>    
             <div class="redes">
                 <a href="https://www.instagram.com/ayl_eventospizzaparty/?hl=es" target="_blank"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.facebook.com/tortasmesadulce.dulcestilo" target="_blank"><i class="fa fa-facebook-square"></i></a>
                 <a href="https://fiesta.mercadolibre.com.ar/MLA-866455332-pizza-party-prepizzas-servicio-de-lunch-_JM" target="_blank">
-                    <img src="assets/img/GENERAL/logomercadolibre.png">
+                    <img src="/img/GENERAL/logomercadolibre.png">
                 </a>
             </div>
         </div>
@@ -364,8 +364,8 @@
     
     <!--------------------------Scripts JS-------------------------->
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     
 </body>
